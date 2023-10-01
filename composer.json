@@ -17,13 +17,20 @@
             "homepage": "https://openapi-generator.tech"
         }
     ],
+    "repositories": [
+        {
+        "type": "vcs",
+        "url": "https://github.com/informacja/hackyeah2023.git"
+        }
+    ],
     "require": {
         "php": "^7.4 || ^8.0",
         "ext-curl": "*",
         "ext-json": "*",
         "ext-mbstring": "*",
         "guzzlehttp/guzzle": "^7.3",
-        "guzzlehttp/psr7": "^1.7 || ^2.0"
+        "guzzlehttp/psr7": "^1.7 || ^2.0",
+        "informacja/hackyeah2023": "*@dev"
     },
     "require-dev": {
         "phpunit/phpunit": "^8.0 || ^9.0",
@@ -34,16 +41,7 @@
     },
     "autoload-dev": {
         "psr-4": { "OpenAPI\\Client\\Test\\" : "test/" }
-    },
-    
-        "repositories": [
-          {
-            "type": "vcs",
-            "url": "https://github.com/greenpp/hackyeah2023/tree/main/app/php.git"
-          }
-        ],
-        "require": {
-          "greenpp/hackyeah2023/tree/main/app/php": "*@dev"
-        }
+    }
+
     
 }
